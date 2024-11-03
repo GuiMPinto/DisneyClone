@@ -1,4 +1,73 @@
+@use 'hero.scss';
+
+$corFundo:#040717;
+$corTextoPrincipal:silver;
+$corTextoSecundario:#f9f9f9;
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// ------- mixins ------- //
+@mixin text($fontSize: 16px)
+{
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color:$corTextoPrincipal;
+}
+
+@mixin title($fontSize: 40px)
+{
+    @include text($fontSize);
+    color: $corTextoSecundario;
+}
+
+// ----- text ----- //
+.text
+{
+    @include text()
+}
+
+.text--small
+{
+    @include text(12px)
+}
+
+.text--big
+{
+    @include text(18px)
+}
+
+
+// ----- title ----- //
+.title
+{
+    @include title();
+}
+
+.title--small
+{
+    @include title(28px);
+}
+
+.title--big
+{
+    @include title(44px);
+}
+
+// ------ link ------- //
+.link-text
+{
+    @include text(18px);
+    color: $corTextoSecundario;
+    text-decoration: underline;
+}
+
+// -------- body -------- //
 body
 {
-    background-color: rgb(0, 0, 0);
+    background-color:$corFundo;
 }
