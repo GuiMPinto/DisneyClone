@@ -1,11 +1,14 @@
 @use 'variaveis.scss';
 @use 'hero.scss';
+@use 'shows.scss';
+@use 'plans.scss';
 
 *
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Avenir, sans-serif;
 }
 
 // ------- Fontes ------- //
@@ -79,9 +82,22 @@
     text-decoration: underline;
 }
 
+// ------- button ------ //
+button
+{
+    margin: 2vh auto;
+    width: 80%;
+    display: block;
+    height: 50px;
+    font-size: 18px;
+    color: variaveis.$corTextoSecundario; 
+    background-color: #6421ff;   
+    text-transform: uppercase;
+    border-radius: 4px;
+}  
+
 // -------- body -------- //
 body
 {
     background-color:variaveis.$corFundo;
-    font-family: Avenir, sans-serif;
 }

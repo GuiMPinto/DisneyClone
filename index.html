@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="./dist/css/main.css">
     <title>Disney Clone</title>
 </head>
+
 <body>
+<!------------------- HERO ------------------>
+<!------------------------------------------->
     <section class="hero">
         <div class="hero__content">
             <h1 class="hero__content__branding">
@@ -43,5 +46,124 @@
 
         </div>
     </section>
+    
+    <!------------------- SHOW ------------------>
+    <!------------------------------------------->
+    <section class="shows">
+        <nav class="shows__tabs">
+            <button data-tab-button="em breve" class="shows__tabs__button shows__tabs__button--is--active">
+                Em breve
+            </button>
+            <button data-tab-button="populares" class="shows__tabs__button">
+                Mais populares
+            </button>
+            <button data-tab-button="star_plus" class="shows__tabs__button">
+                Mais no Star+
+            </button>
+        </nav>
+        <!----       ---- BREVE ----      ---->
+        <ul data-tab-id="em breve" class="shows__list shows__list--is--active">
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/desencantada.jpg">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/lobisomem.jpg">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/sem_limites.jpg">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/spidey.jpg">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/the_santa_clauses.jpg">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/willow.jpg">
+            </li>
+        </ul>
+        <!----      ---- MAIS POPULARES ----     ---->    
+        <ul data-tab-id="populares" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/bluey.jpg">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/cavaleira_da_lua.jpg " >
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/o_incrivel_dr_pol.jpg">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/obi_wan.jpg ">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/red.jpg ">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/tudo_igual_sqn.jpg ">
+            </li>
+        </ul>
+        <!----     ---- MAIS NO STAR + ----    ---->
+        <ul data-tab-id="star_plus" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/belair.jpg ">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/libertadores.jpg">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/nba.jpg">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/os_simpson.jpg">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/premier_league.jpg">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/the_kardashians.jpg">
+            </li>
+        </ul>        
+
+        <!-- ------------- PLANOS ------------- -->
+        <!-- ---------------------------------- -->
+        <section class="plans">
+            <h2 class="title--big">Escolha seu Plano</h2>
+            <ul class="plans__list">
+                <!-- Coluna 1 -->
+                <li class="plans__list__item" >
+                    <img src="./dist/images/logos/disneyplus_underline.png" alt="">
+                    <strong class="title--small">R$27,90 mês*</strong>
+                    <p class="text">
+                        No Disney+ você encontra as últimas estreias do cinema, originais e clássicos inesquecíveis. 
+                    </p>
+                    <button>Assine Agora</button>
+                </li>
+                <!-- Coluna 2 -->
+                <li class="plans__list__item" >
+                    <img src="./dist/images/logos/disney_star_plus_sm.png" alt="">
+                    <strong class="title--small">R$37,90 mês*</strong>
+                    <p class="text">
+                        No Disney+ você encontra as últimas estreias do cinema, originais e clássicos inesquecíveis. 
+                    </p>
+                    <button>Assine Agora</button>
+                </li>
+                <!-- Coluna 3 -->
+                <li class="plans__list__item" >
+                    <img src="./dist/images/logos/disney_star_plus_starzplay_underline.png" alt="">
+                    <strong class="title--small">R$57,90 mês*</strong>
+                    <p class="text">
+                        No Disney+ você encontra as últimas estreias do cinema, originais e clássicos inesquecíveis. 
+                    </p>
+                    <button>Assine Agora</button>
+                </li>
+            </ul>
+            <p class="text--small">
+                *O preço pode variar caso a assinatura seja feita através de outras plataformas. 
+            </p>
+        </section>
+    </section>
+
+    <script src="./src/main.js"></script>
 </body>
 </html>

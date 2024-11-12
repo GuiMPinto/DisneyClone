@@ -6,6 +6,7 @@
     background-image: url(../images/hero_desktop.jpeg);
     background-size: cover;
     max-height: 100vh;
+    margin-bottom: 60px;
     &__content
     {
         text-align: center;
@@ -14,23 +15,23 @@
         &__branding
         {
             padding-top: 50px; 
-            max-width: 320px;
-            margin: 0 auto 38px;
+            max-width: 300px;
+            margin: 0 auto 20px;
         }
 
         .title--small
         {
-            margin-bottom: 64px;
+            margin-bottom: 36px;
         }
 
 
         p
         {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
 
             &:last-child
             {
-                margin-top: 40px;
+                margin-top: 30px;
             }
             
         }
@@ -49,18 +50,6 @@
                     height: 42px;
                 }
 
-                button
-                {
-                    margin: 2vh auto;
-                    width: 80%;
-                    display: block;
-                    height: 60px;
-                    font-size: 18px;
-                    color: variaveis.$corTextoSecundario; 
-                    background-color: #6421ff;   
-                    text-transform: uppercase;
-                    border-radius: 4px;
-                }
                 span
                 {
                     color: variaveis.$corTextoSecundario; 
